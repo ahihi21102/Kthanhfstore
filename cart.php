@@ -1,6 +1,6 @@
 <?php 
 session_start();
-// 👇 SỬA LỖI QUAN TRỌNG: Kết nối db.php thay vì data.php
+
 require_once 'db.php'; 
 
 // Xử lý xóa sản phẩm (Nếu bấm nút xóa)

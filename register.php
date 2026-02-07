@@ -6,11 +6,11 @@ $success = '';
 
 // Xử lý khi người dùng bấm nút Đăng ký
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $fullname = $_POST['fullname'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $username = $conn->real_escape_string($_POST['username']);
+    $password = $conn->real_escape_string($_POST['password']); 
+    $fullname = $conn->real_escape_string($_POST['fullname']);
+    $phone = $conn->real_escape_string($_POST['phone']);
+    $address = $conn->real_escape_string($_POST['address']);
 
     // 1. Kiểm tra xem tên đăng nhập đã có chưa
     $check = $conn->query("SELECT * FROM users WHERE username = '$username'");

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // Mặc định XAMPP là root
-$password = "";     // Mặc định XAMPP không có pass
+$username = "root"; 
+$password = "";     
 $dbname = "Kthanhfstore_db";
 
 // Tạo kết nối
